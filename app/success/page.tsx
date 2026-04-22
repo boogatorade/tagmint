@@ -4,18 +4,18 @@ const PACKAGES: Record<string, { name: string; turnaround: string; includes: str
   basic: {
     name: "Listing Tune-Up",
     turnaround: "2 business days",
-    includes: ["1 listing optimized", "Title + 13 tags + description"],
+    includes: ["2 listings optimized", "Title + 13 tags + description"],
   },
   standard: {
     name: "Shop Boost",
     turnaround: "2 business days",
-    includes: ["3 listings optimized", "Title + 13 tags + description per listing", "Keyword research report"],
+    includes: ["4 listings optimized", "Title + 13 tags + description per listing", "Keyword research report"],
   },
   premium: {
     name: "Full Shop Overhaul",
     turnaround: "5 business days",
     includes: [
-      "10 listings optimized",
+      "11 listings optimized",
       "Title + 13 tags + description per listing",
       "Full shop SEO audit",
       "Competitor analysis",

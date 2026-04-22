@@ -9,34 +9,34 @@ const PACKAGES = {
     price: "$7",
     turnaround: "48 hours",
     includes: [
-      "1 listing fully optimized",
+      "2 listings fully optimized",
       "Keyword-researched title",
       "All 13 tags rewritten",
       "SEO-optimized description",
       "Delivered within 48 hours",
     ],
-    listingsNeeded: 1,
+    listingsNeeded: 2,
   },
   standard: {
     name: "Shop Boost",
     price: "$19",
     turnaround: "48 hours",
     includes: [
-      "3 listings fully optimized",
+      "4 listings fully optimized",
       "Keyword-researched titles",
       "All 13 tags per listing rewritten",
       "SEO-optimized descriptions",
       "Keyword research report",
       "Delivered within 48 hours",
     ],
-    listingsNeeded: 3,
+    listingsNeeded: 4,
   },
   premium: {
     name: "Full Shop Overhaul",
     price: "$49",
     turnaround: "5 business days",
     includes: [
-      "10 listings fully optimized",
+      "11 listings fully optimized",
       "Keyword-researched titles",
       "All 13 tags per listing rewritten",
       "SEO-optimized descriptions",
@@ -45,7 +45,7 @@ const PACKAGES = {
       "30-day check-in + 1 free revision",
       "Delivered within 5 business days",
     ],
-    listingsNeeded: 10,
+    listingsNeeded: 11,
   },
 } as const;
 
@@ -187,9 +187,7 @@ export default function CheckoutForm() {
             style={{ borderTop: "1px solid #1a1a2e", color: "#606070" }}
           >
             Please provide{" "}
-            {pkg.listingsNeeded === 1
-              ? "1 listing URL"
-              : `up to ${pkg.listingsNeeded} listing URLs`}{" "}
+            {`up to ${pkg.listingsNeeded} listing URLs`}{" "}
             in the form.
           </div>
         </div>
