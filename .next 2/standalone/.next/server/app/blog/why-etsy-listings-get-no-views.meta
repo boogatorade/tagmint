@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/blog/layout,_N_T_/blog/why-etsy-listings-get-no-views/layout,_N_T_/blog/why-etsy-listings-get-no-views/page,_N_T_/blog/why-etsy-listings-get-no-views"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/blog/why-etsy-listings-get-no-views/__PAGE__",
+    "/blog/why-etsy-listings-get-no-views",
+    "/blog",
+    "/_index",
+    "/_head"
+  ]
+}

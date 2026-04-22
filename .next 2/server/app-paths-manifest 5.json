@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/create-checkout-session/route": "app/api/create-checkout-session/route.js",
+  "/api/webhook/route": "app/api/webhook/route.js",
+  "/blog/ebay-seo-guide/page": "app/blog/ebay-seo-guide/page.js",
+  "/blog/etsy-seo-tips/page": "app/blog/etsy-seo-tips/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/blog/why-etsy-listings-get-no-views/page": "app/blog/why-etsy-listings-get-no-views/page.js",
+  "/cancel/page": "app/cancel/page.js",
+  "/checkout/page": "app/checkout/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/success/page": "app/success/page.js"
+}

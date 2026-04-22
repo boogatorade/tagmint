@@ -1,0 +1,127 @@
+[
+  {
+    "route": "/",
+    "firstLoadUncompressedJsBytes": 527382,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/07omxpjuv8e68.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  },
+  {
+    "route": "/checkout",
+    "firstLoadUncompressedJsBytes": 526976,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/0o4.sm55-h5_h.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  },
+  {
+    "route": "/blog",
+    "firstLoadUncompressedJsBytes": 519677,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/0ka051yepewro.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  },
+  {
+    "route": "/blog/ebay-seo-guide",
+    "firstLoadUncompressedJsBytes": 519677,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/0ka051yepewro.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  },
+  {
+    "route": "/blog/etsy-seo-tips",
+    "firstLoadUncompressedJsBytes": 519677,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/0ka051yepewro.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  },
+  {
+    "route": "/blog/why-etsy-listings-get-no-views",
+    "firstLoadUncompressedJsBytes": 519677,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/0ka051yepewro.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  },
+  {
+    "route": "/cancel",
+    "firstLoadUncompressedJsBytes": 519677,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/0ka051yepewro.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  },
+  {
+    "route": "/success",
+    "firstLoadUncompressedJsBytes": 519677,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/0ka051yepewro.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  },
+  {
+    "route": "/_not-found",
+    "firstLoadUncompressedJsBytes": 513849,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0kx5qws0_a-x~.js",
+      ".next/static/chunks/00gq-v0e07i1q.js",
+      ".next/static/chunks/0pqt~8bl3ukh4.js",
+      ".next/static/chunks/0257pdz1-imal.js",
+      ".next/static/chunks/13p8_lyereib7.js",
+      ".next/static/chunks/turbopack-0we-wkovjwrx0.js"
+    ]
+  }
+]
