@@ -36,21 +36,21 @@ const jsonLd = {
     {
       "@type": "Offer",
       name: "Listing Tune-Up",
-      description: "1 Etsy or eBay listing fully optimized — title, 13 tags, and description. Delivered within 48 hours.",
+      description: "2 Etsy or eBay listings fully optimized — title, 13 tags, and description. Delivered within 48 hours.",
       price: "7.00",
       priceCurrency: "USD",
     },
     {
       "@type": "Offer",
       name: "Shop Boost",
-      description: "3 listings fully optimized plus a keyword research report. Delivered within 48 hours.",
+      description: "4 listings fully optimized plus a keyword research report. Delivered within 48 hours.",
       price: "19.00",
       priceCurrency: "USD",
     },
     {
       "@type": "Offer",
       name: "Full Shop Overhaul",
-      description: "10 listings optimized with a full shop SEO audit and competitor analysis. Delivered within 5 business days.",
+      description: "11 listings optimized with a full shop SEO audit and competitor analysis. Delivered within 5 business days.",
       price: "49.00",
       priceCurrency: "USD",
     },
@@ -360,9 +360,9 @@ export default function Home() {
                 <span className="text-5xl font-black">$7</span>
                 <span className="text-sm mb-2" style={{ color: "#6060a0" }}>one time</span>
               </div>
-              <p className="text-sm mb-8" style={{ color: "#6060a0" }}>Perfect for testing with your single best-selling listing.</p>
+              <p className="text-sm mb-8" style={{ color: "#6060a0" }}>Perfect for testing with your two best-selling listings.</p>
               <ul className="flex-1 space-y-3 mb-8">
-                {["1 listing fully optimized", "Keyword-researched title", "All 13 tags rewritten", "SEO-optimized description", "Delivered within 48 hours"].map(i => (
+                {["2 listings fully optimized", "Keyword-researched title", "All 13 tags rewritten", "SEO-optimized description", "Delivered within 48 hours"].map(i => (
                   <li key={i} className="flex items-center gap-3 text-sm" style={{ color: "#c0c0d0" }}>
                     <span style={{ color: "#10b981", fontSize: 16 }}>✓</span>{i}
                   </li>
@@ -383,9 +383,9 @@ export default function Home() {
                 <span className="text-5xl font-black">$19</span>
                 <span className="text-sm mb-2" style={{ color: "#6060a0" }}>one time</span>
               </div>
-              <p className="text-sm mb-8" style={{ color: "#6060a0" }}>Optimize your top 3 listings and get a keyword strategy.</p>
+              <p className="text-sm mb-8" style={{ color: "#6060a0" }}>Optimize your top 4 listings and get a keyword strategy.</p>
               <ul className="flex-1 space-y-3 mb-8">
-                {["3 listings fully optimized", "Keyword-researched titles", "All 13 tags per listing", "SEO-optimized descriptions", "Keyword research report", "Delivered within 48 hours"].map(i => (
+                {["4 listings fully optimized", "Keyword-researched titles", "All 13 tags per listing", "SEO-optimized descriptions", "Keyword research report", "Delivered within 48 hours"].map(i => (
                   <li key={i} className="flex items-center gap-3 text-sm" style={{ color: "#c0c0d0" }}>
                     <span style={{ color: "#10b981", fontSize: 16 }}>✓</span>{i}
                   </li>
@@ -405,7 +405,7 @@ export default function Home() {
               </div>
               <p className="text-sm mb-8" style={{ color: "#6060a0" }}>A complete SEO transformation for serious sellers ready to scale.</p>
               <ul className="flex-1 space-y-3 mb-8">
-                {["10 listings fully optimized", "Keyword-researched titles", "All 13 tags per listing", "SEO-optimized descriptions", "Full shop SEO audit", "Competitor analysis", "Delivered within 5 business days"].map(i => (
+                {["11 listings fully optimized", "Keyword-researched titles", "All 13 tags per listing", "SEO-optimized descriptions", "Full shop SEO audit", "Competitor analysis", "Delivered within 5 business days"].map(i => (
                   <li key={i} className="flex items-center gap-3 text-sm" style={{ color: "#c0c0d0" }}>
                     <span style={{ color: "#10b981", fontSize: 16 }}>✓</span>{i}
                   </li>

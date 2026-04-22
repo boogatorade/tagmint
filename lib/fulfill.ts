@@ -55,11 +55,11 @@ export async function fulfillOrder(order: {
   switch (order.package) {
     case 'standard':
       packageIntro =
-        'This is a 3-listing optimization with keyword research. Please also include a brief **KEYWORD RESEARCH NOTE** at the top with 5-10 high-value search terms for this shop\'s niche.\n\n';
+        'This is a 4-listing optimization with keyword research. Please also include a brief **KEYWORD RESEARCH NOTE** at the top with 5-10 high-value search terms for this shop\'s niche.\n\n';
       break;
     case 'premium':
       packageIntro =
-        'This is a full 10-listing optimization with shop audit. Please start with a **SHOP AUDIT INTRODUCTION** summarizing key SEO opportunities and overall shop health observations.\n\n';
+        'This is a full 11-listing optimization with shop audit. Please start with a **SHOP AUDIT INTRODUCTION** summarizing key SEO opportunities and overall shop health observations.\n\n';
       break;
     default:
       // basic: 1 listing, no extra intro
