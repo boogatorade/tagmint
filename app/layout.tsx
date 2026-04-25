@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tagmint-app.netlify.app"),
+  metadataBase: new URL("https://tagmint-app.vercel.app"),
   title: {
     default: "TagMint — Etsy & eBay SEO Optimization That Actually Works",
     template: "%s | TagMint",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://tagmint-app.netlify.app",
+    url: "https://tagmint-app.vercel.app",
     siteName: "TagMint",
     title: "TagMint — Etsy & eBay SEO Optimization That Actually Works",
     description:
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://tagmint-app.netlify.app",
+    canonical: "https://tagmint-app.vercel.app",
   },
 };
 
@@ -84,6 +85,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       style={{ backgroundColor: "#0a0a0f" }}
     >
+      {/* Google Ads conversion tag */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-18046372429"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads-tag" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-18046372429');
+        `}
+      </Script>
       <body className="min-h-full flex flex-col" style={{ backgroundColor: "#0a0a0f", color: "#f0f0f5" }}>
         {children}
       </body>
