@@ -37,6 +37,39 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid webhook signature.' }, { status: 400 });
   }
 
+  // ── Subscription created (new subscriber) ──────────────────────────────
+  if (event.type === 'customer.subscription.created') {
+    const sub = event.data.object as Stripe.Subscription;
+    const meta = sub.metadata ?? {};
+    const name = meta.name ?? '';
+    const shopUrl = meta.shopUrl ?? '';
+    const plan = meta.plan ?? '';
+
+    // Get email from customer record
+    let email = '';
+    try {
+      const customer = await getStripe().customers.retrieve(sub.customer as string);
+      if (!customer.deleted) email = (customer as Stripe.Customer).email ?? '';
+    } catch { /* ignore */ }
+
+    await Promise.allSettled([
+      appendToGoogleSheet({
+        name, email, shopUrl,
+        listingUrls: '', package: `subscription_${plan}`,
+        amount: plan === 'annual' ? 9900 : 1499,
+        date: new Date().toISOString(), sessionId: sub.id,
+      }),
+      sendOwnerNotification({
+        name, email, shopUrl,
+        listingUrls: '', package: `subscription_${plan}`,
+        amount: plan === 'annual' ? 9900 : 1499,
+        date: new Date().toISOString(), sessionId: sub.id,
+      }),
+    ]);
+    console.log(`[webhook] New subscriber: ${email} (${plan})`);
+  }
+
+  // ── One-time checkout ───────────────────────────────────────────────────
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session;
 

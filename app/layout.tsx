@@ -101,6 +101,41 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col" style={{ backgroundColor: "#0a0a0f", color: "#f0f0f5" }}>
         {children}
       </body>
+      {/* Visitor analytics tracker */}
+      <Script id="tagmint-analytics" strategy="afterInteractive">{`
+        (function() {
+          try {
+            var STORAGE_KEY = 'tm_vid';
+            var vid = localStorage.getItem(STORAGE_KEY);
+            var isNew = !vid;
+            if (!vid) {
+              vid = 'v_' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+              localStorage.setItem(STORAGE_KEY, vid);
+            }
+            var startTime = Date.now();
+            function sendHit(timeOnSite) {
+              var payload = JSON.stringify({
+                visitorId: vid,
+                referrer: document.referrer || '',
+                page: window.location.pathname,
+                timeOnSite: timeOnSite || 0,
+                isNew: isNew,
+                screenSize: screen.width + 'x' + screen.height,
+              });
+              if (navigator.sendBeacon) {
+                navigator.sendBeacon('/api/analytics', new Blob([payload], { type: 'application/json' }));
+              } else {
+                fetch('/api/analytics', { method: 'POST', body: payload, headers: { 'Content-Type': 'application/json' }, keepalive: true });
+              }
+              isNew = false;
+            }
+            sendHit(0);
+            window.addEventListener('pagehide', function() {
+              sendHit(Math.round((Date.now() - startTime) / 1000));
+            });
+          } catch(e) {}
+        })();
+      `}</Script>
     </html>
   );
 }
