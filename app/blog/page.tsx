@@ -10,6 +10,33 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "how-to-increase-etsy-sales",
+    title: "How to Increase Etsy Sales in 2025: 10 Strategies That Work",
+    excerpt:
+      "Most Etsy sellers with low sales aren't making bad products — they're invisible. These 10 strategies fix discoverability, click-through rate, and conversion.",
+    date: "April 2025",
+    readTime: "9 min read",
+    tag: "Etsy SEO",
+  },
+  {
+    slug: "etsy-tags-guide",
+    title: "The Complete Etsy Tags Guide: How to Choose Tags That Get Views",
+    excerpt:
+      "Etsy gives you 13 tag slots. Most sellers waste them on single words and repeated keywords. Here's the exact framework for choosing tags that rank.",
+    date: "April 2025",
+    readTime: "8 min read",
+    tag: "Etsy SEO",
+  },
+  {
+    slug: "etsy-listing-optimization",
+    title: "Etsy Listing Optimization: The Complete Checklist for 2025",
+    excerpt:
+      "A step-by-step checklist covering titles, tags, photos, descriptions, pricing, and attributes — everything you need to rank higher and sell more.",
+    date: "April 2025",
+    readTime: "10 min read",
+    tag: "Etsy SEO",
+  },
+  {
     slug: "etsy-seo-tips",
     title: "7 Etsy SEO Tips That Actually Work in 2025",
     excerpt:
@@ -130,7 +157,7 @@ export default function BlogIndex() {
 
       {/* POSTS GRID */}
       <section className="py-12 px-6 pb-32">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 md:grid-rows-2">
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="card-glass rounded-2xl p-7 flex flex-col group">
               <div className="flex items-center justify-between mb-5">
